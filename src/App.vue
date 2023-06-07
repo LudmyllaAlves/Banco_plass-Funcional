@@ -2,7 +2,7 @@
   <router-view/>
 </template>
 <script>
-import './cadastra.css'
+import './css/global.css'
 export default{
     name: "App",
     }

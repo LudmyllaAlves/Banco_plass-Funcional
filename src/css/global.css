@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'fundo';
+    src: url('../fonts/PressStart2P-Regular.ttf');
+}
+@font-face {
+    font-family: 'lilita';
+    src: url('../fonts/LilitaOne-Regular.ttf');
+}
+:root{
+    --cor-fundo:#95b3f5;
+    --color-principal:#99d1f18c;
+    --color-texto: #165980;
+    --color-escura:#464545;
+    --degrade: linear-gradient(var(--cor-fundo), var(--color-principal), var(--color-escura)); ;
+
+}
+
+body{
+    background-image: linear-gradient(#1b0f4e, #4b8dc2, #908ff1);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+}
+
+
+
