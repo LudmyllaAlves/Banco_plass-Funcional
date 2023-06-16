@@ -14,12 +14,17 @@
     --degrade: linear-gradient(var(--cor-fundo), var(--color-principal), var(--color-escura)); ;
 
 }
-
+html
 body{
     background-image: linear-gradient(#1b0f4e, #4b8dc2, #908ff1);
     background-repeat: no-repeat;
-    display: flex;
+}
+
+main{
     width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    background-color: var(--color-fundo);
 }
 
 
