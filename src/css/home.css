@@ -1,11 +1,47 @@
 button.transacao{
-border-radius: 50px;
+border-radius: 55px;
 color: var(--color-texto);
 background-color: var(--color-principal);
-width: 80px;
+width: 90px;
 height: 80px;
+margin: 10px;
 }
 
-button svg{
+button#visualizar{
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: -30%;
+    margin-right: 20px;
+}
+
+button#visualizar img{
+    color: var(--color-texto);
+
+}
+
+div#saldo{
+    text-align: center;
+}
+
+div#funcoes{
+    text-align: center;
+    margin-top: 50px;
+}
+
+div#banco{
+    background-color: var(--color-principal);
+    margin: 5%;
+    margin-left: 35%;
+    padding: 70px;
     
+    border-radius: 20px;
+}
+
+
+button#valor{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    font-family: "lilita", sans-serif;
+    color: var(--color-texto);
 }

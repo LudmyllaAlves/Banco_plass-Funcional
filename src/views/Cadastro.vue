@@ -43,8 +43,7 @@ export default{
 				telefone: "",
 				endereco:"",
                 senha: ""
-            },
-            resultes:[]
+            }
         }
     },
     methods:{
@@ -52,11 +51,11 @@ export default{
                 let form = document.querySelector('#inputform');
                 axios.post('http://localhost/banco/controler/novoCliente.php', form)
                 .then(response => {
-                alert(response.data)
-                    if(response.data == "Sucesso"){
+                console.log(response.data);
+                    if(response.data == "Bem-vindo!!!"){
 						window.location.href='http://localhost:8080/home';
 					}else{
-						window.location.href='http://localhost:8080/';
+						window.location.href='http://localhost:8080/cadastro';
 					}
                 })
                 .catch(error => error)

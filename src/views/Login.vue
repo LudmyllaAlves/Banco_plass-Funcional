@@ -6,11 +6,10 @@
                 <fieldset>
                 <h1 id="titulo">Login</h1><br>
                 <form id="inputform" method="POST">
-                    
                     <label>Digite seu cpf/cnpj:</label><br>
-                    <input type="text" name="cpfcnpj" v-model="form.cpfcnpf"><br>
+                    <input type="text" name="cpfcnpj" v-model="form.cpfcnpj"><br>
                     <label>Digite sua senha:</label><br>
-                    <input type="text" name="senha" v-model="form.senha"><br>   
+                    <input type="password" name="senha" v-model="form.senha"><br>   
                     <button @click="postLogin()" type="submit" class="botao">Login</button><br>
                 </form>
                 <p id="link"><a href="/cadastro">Cadastrar-se</a></p>
@@ -35,7 +34,7 @@ export default{
     data(){
         return{
             form:{
-                cpfcnpf: "",
+                cpfcnpj: "",
                 senha: ""
             },
             resultes:[]
@@ -47,7 +46,7 @@ export default{
                 axios.post('http://localhost/banco/controler/login.php', form)
                 .then(response => {
                 alert(response.data)
-                    if(response.data == "Logado"){
+                    if(response.data == "20"){
                         window.location.href='http://localhost:8080/home';
                     }else{
                         window.location.href='http://localhost:8080/'
